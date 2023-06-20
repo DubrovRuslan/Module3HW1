@@ -1,6 +1,4 @@
-﻿using Module3HW1.Helpers;
-
-namespace Module3HW1
+﻿namespace Module3HW1
 {
     public class Starter
     {
@@ -12,7 +10,7 @@ namespace Module3HW1
             _myCollection1.Add(6);
             var myCollection2 = new MyCollection<int> { 1, 2, 3 };
             _myCollection1.AddRange(myCollection2);
-            _myCollection1.Sort(new MyCollectionIntComparer());
+            _myCollection1.Sort();
             foreach (var item in _myCollection1)
             {
                 Console.WriteLine(item);

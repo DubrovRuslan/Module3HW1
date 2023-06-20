@@ -106,9 +106,9 @@ namespace Module3HW1
             return true;
         }
 
-        public void Sort(IComparer<T> comparer)
+        public void Sort()
         {
-            Array.Sort(_array, 0, _lastElemetIndex + 1, comparer);
+            Array.Sort(_array, 0, _lastElemetIndex + 1, Comparer<T>.Default);
         }
     }
 }
